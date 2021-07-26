@@ -5,9 +5,9 @@ document.body.append(header)
 
 fetch('https://restcountries.eu/rest/v2/all')
 .then(data=>data.json())
-.then(countries => loadbrewery(countries))  
+.then(countries => loadcountry(countries))  
 
-function loadbrewery(countries){
+function loadcountry(countries){
   const countryList = document.createElement("div");
   countryList.className="listdiv";
 
